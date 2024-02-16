@@ -1,0 +1,23 @@
+<!--                   //////*  Data Binding  *//////                  -->
+<!-- <div class="text">
+  <h1>Hello Everyone</h1>
+  <p>My Name is {{name}}</p>
+  <p>Our Course is {{course}}</p>
+  <p>{{2+2}}</p>                           
+  <p>{{isGood?'Good Boy':'Bad Boy'}} 
+  {{getGreeting()}}
+  </p>
+  
+</div> -->
+
+<!--                   //////*  Property Binding  *//////                  -->
+<div [class.text]="isHeading">
+<h1>
+  My Heading
+</h1></div>
+<button [disabled]="isDisabled">Click Me</button>
+<img src="{{address}}" alt="">
+<p [title]="text">{{text}}</p>
+
+
+<input type="text" [placeholder]="plchldr">

@@ -5,7 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-
 export class AppComponent {
-  title = 'component1';
+  title = 'demo1';
+  name = "Satish"
+  a=5;b=10;
+  employee={
+    name: "Satish",
+    age: 20,
+    
+  }
 }
