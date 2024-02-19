@@ -1,0 +1,11 @@
+<div>
+<div [className]="isCenter?'center':''">
+  <h1>hello {{name}}</h1>
+  <button [disabled]="isdisabled">Click Me</button>
+  <button (mouseover)="display()">Click</button>
+  <input type="text" (change)="inp($event)">
+  <input type="text" [(ngModel)]="na">
+  <p>Hello, {{na}}</p>
+  <p>input is {{input}}</p>
+<app-header></app-header>
+</div>

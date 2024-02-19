@@ -31,6 +31,7 @@ export class AppComponent {
       }
     }
     inputChange(e:Event) {
+      console.log(e)
      this.inp = (e.target as HTMLInputElement).value;
       console.log(this.inp)
     }

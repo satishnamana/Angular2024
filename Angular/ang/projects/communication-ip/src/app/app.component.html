@@ -1,0 +1,14 @@
+<div>
+
+  <app-header [message]="inp"></app-header>
+  <div style="height: 200px; width: 200px; border: 1px solid black;">
+    <h1>I'm App Comoonent</h1>
+    <input type="text" [(ngModel)]="inp">
+    <br>
+
+    <input type="text" [(ngModel)]="inp2">
+    {{inp2}}
+    {{parentPerson.name}}
+  </div>
+  <app-footer [msg]="inp2" [person]="parentPerson"></app-footer>
+</div>
