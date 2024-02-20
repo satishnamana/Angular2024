@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class FooterComponent {
   @Input() msg!:string;
-  @Input() person:any
+  @Input() person : any
 }
