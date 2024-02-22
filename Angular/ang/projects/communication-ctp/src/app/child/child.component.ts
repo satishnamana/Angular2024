@@ -6,23 +6,15 @@ import { Component,Output, EventEmitter } from '@angular/core';
   styleUrl: './child.component.css'
 })
 export class ChildComponent {
-
-  @Output()myEvent= new EventEmitter();
-  data = {
-    name:"satish",
-    age: 26
-  }
-  count = 0;
-  message!: "I'm, good"
-  counter()
+count = 0;
+  @Output() myEvent = new EventEmitter()
+incr()
+{
+  this.count++;
+}
+  childFun()
   {
-      this.count++;
-  }
-  inp=''
-  fun() 
-  {
-    const message="hello everyone"
-    console.log("button clicked")
-    this.myEvent.emit(this.inp)
+    const data = "hello World";
+    this.myEvent.emit(data)
   }
 }

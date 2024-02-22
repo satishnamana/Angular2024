@@ -1,0 +1,14 @@
+<div>
+  <h1>Angular main Component</h1>
+  <!-- <div class="myClass" *ngIf="isLogin as value;else loginMessage">{{value}}</div>
+<ng-template #afterloginmessage>Hello Admin!</ng-template>
+  <ng-template #loginMessage>Please Login</ng-template></div>
+<div class="myclass" *ngIf="isSignin; then aftersigninmessage else signinMessage"></div>
+<ng-template #aftersigninmessage>Hello User!</ng-template>
+<ng-template #signinMessage>Please Signin</ng-template> -->
+<button (click)="show = !show">{{show?'hide':'show'}}</button>
+<div *ngIf="show then show1 else show2"> </div>
+<ng-template #show1>This is the Show</ng-template>
+<ng-template #show2>Nothing To Show</ng-template>
+
+</div>
