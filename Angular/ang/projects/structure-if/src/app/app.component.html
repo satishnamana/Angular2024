@@ -6,9 +6,26 @@
 <div class="myclass" *ngIf="isSignin; then aftersigninmessage else signinMessage"></div>
 <ng-template #aftersigninmessage>Hello User!</ng-template>
 <ng-template #signinMessage>Please Signin</ng-template> -->
-<button (click)="show = !show">{{show?'hide':'show'}}</button>
+<!-- <button (click)="show = !show">{{show?'hide':'show'}}</button>
 <div *ngIf="show then show1 else show2"> </div>
 <ng-template #show1>This is the Show</ng-template>
-<ng-template #show2>Nothing To Show</ng-template>
+<ng-template #show2>Nothing To Show</ng-template> -->
 
+
+<!--                        -----------SWITCHCASE EXAMPLE-------------------
+<div [ngSwitch]="x">
+  <div *ngSwitchCase="3" >
+  <div [ngSwitch]="day">
+      <div *ngSwitchCase="0">Sunday</div>
+      <div *ngSwitchCase="1">Monday</div> 
+      <div *ngSwitchCase="2">Tuesday</div>
+      <div *ngSwitchCase="3">Wensday</div>
+      <div *ngSwitchDefault>Some Other Day</div>
+  </div>
 </div>
+</div>  -->
+<!--                   -------------------- NGFOR EXAMPLE  ------------
+  <div *ngFor="let item of items;let i=index;let o=odd;let e=even">
+
+  This is 6 times of item :{{item*6}} and index :{{i}}
+</div> -->

@@ -10,6 +10,23 @@ export class AppComponent {
   isLogin=true;
   user="admin";
   isSignin=true;
-  show=false
+  show=false;
 
+  x=3;
+ day=0
+ items=[2,5,6,4,8,7]
+  constructor() {
+   enum Days {
+    sunday,
+    monday,
+    tuesday,
+    wensday,
+    thursday,
+    friday,
+    saturday
+  }
+  this.day=Days.friday
+
+
+  }
    }
