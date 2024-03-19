@@ -14,7 +14,7 @@ export class AppComponent {
     age: 'number',
     empId: 'number',
   };
-  ManiData:any= [];
+  ManiData= [];
 
   employeedata = [
     { name: 'satish', age: 25, empId: 101, email: 'satish@gamil.com' },
@@ -35,4 +35,5 @@ function maniData ()
 {
   throw new Error( 'Function not implemented.' );
 }
+
 
