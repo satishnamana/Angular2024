@@ -1,0 +1,17 @@
+<div>
+  <h1>Main Component</h1>
+  <input type="text"  [(ngModel)]="newValue">
+    <button (click)="add()">Add</button>
+
+  <div *ngFor="let i of items">
+    {{i}}
+  </div>
+  <button (click)="clear()">Clear All</button>
+</div>
+<div *ngFor="let i of prod">
+  {{i.title}}
+  <h1>{{i.id}}</h1>
+  <p>{{i.price}}</p>
+</div>
+<button (click)="getProducts()">click</button>
+<app-header></app-header>
