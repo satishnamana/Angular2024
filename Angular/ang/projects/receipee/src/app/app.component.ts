@@ -13,10 +13,10 @@ export class AppComponent {
   constructor(private rds:ReceipeeDataService)
   {
    this.rds.fetchData().subscribe((data:any)=> {
-    console.log(data.receipes);
+    console.log(data.recipes);
     this.receipes = data.recipes
     console.log(this.receipes)
-   });
+   })
 
     console.log(this.receipes)
   }
@@ -26,7 +26,7 @@ export class AppComponent {
   }
   search()
   {
-    this.rds.searchData(this.searchTerm)
+    this.rds.searchData(this.searchTerm )
     .subscribe((data)=>this.receipes = data.recipes)
 
   }

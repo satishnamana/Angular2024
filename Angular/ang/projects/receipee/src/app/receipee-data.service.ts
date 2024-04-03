@@ -1,21 +1,23 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-@Injectable({
+@Injectable( {
   providedIn: 'root'
-})
-export class ReceipeeDataService {
-  receipes:any=[];
+} )
+export class ReceipeeDataService
+{
+  receipes: any = [];
 
-  constructor(private hc:HttpClient) {
-   }
-   fetchData():Observable<any>
-   {
-    return this.hc.get('https://dummyjson.com/recipes')
-  };
-  searchData(str:string):Observable<any>
+  constructor ( private hc: HttpClient )
   {
-    return this.hc.get('https://dummyjson.com/recipes/search?q=${str}');
   }
-  
+  fetchData (): Observable<any>
+  {
+    return this.hc.get( 'https://dummyjson.com/recipes' )
+  }
+  searchData ( str: string ): Observable<any>
+  {
+    return this.hc.get( 'https://dummyjson.com/recipes/search?q=${str}' );
+  }
+
 }
